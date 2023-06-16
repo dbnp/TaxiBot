@@ -37,8 +37,8 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 // Monitor channel for messages and perform actions
                 client.on('messageCreate', async (message) => {
                     // Check if the message is from the monitored channel and sender doesn't have the specified role
-                    const monitoredChannelId = '1118985975545221182';
-                    const restrictedRoleId = '1099746577955954758';
+                    const monitoredChannelId = 'your_monitored_channel_here';
+                    const restrictedRoleId = 'your_restricted_role_here';
 
                     if (message.channel.id === monitoredChannelId && !message.member.roles.cache.has(restrictedRoleId)) {
                         // Extract relevant information from the message
@@ -56,9 +56,9 @@ const db = new sqlite3.Database('./users.db', (err) => {
                                     // User doesn't exist or messageSent is 0, proceed with sending the message
 
                                     // Post the information in the target channel
-                                    const targetChannelId = '1118992187464613918';
+                                    const targetChannelId = 'target_channel_id_here';
                                     const targetChannel = client.channels.cache.get(targetChannelId);
-                                    const userMention = '153616201652764673'; // Replace with the actual user ID
+                                    const userMention = 'user_to_mention'; // Replace with the actual user ID
                                     const mention = `<@${userMention}>`;
                                     const messageContent = `${mention} Here's a new message:`;
 
@@ -125,7 +125,7 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 client.on('messageCreate', (message) => {
                     const prefix = '.';
                     const command = 'reset';
-                    const authorizedUserId = '153616201652764673';
+                    const authorizedUserId = 'your_user_id_here'; // User Id allowed to use the command
 
                     if (message.content.startsWith(`${prefix}${command}`) && message.author.id === authorizedUserId) {
                         const args = message.content.split(' ');
@@ -165,7 +165,7 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 });
 
                 // Start the bot
-                client.login('MTExODk5NzkyMjIwNjQ2NjA5OA.GnRsI-.HjFWB5ggAIzmLq2iCgcpwM8eNw_jg2bTrUnkFg');
+                client.login('your_token_here');
             }
         });
     }
