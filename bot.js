@@ -165,7 +165,7 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 });
 
                 // Start the bot
-                client.login('MTExODk5NzkyMjIwNjQ2NjA5OA.G3aLYA.RUaXurJ-O5dz4WWIsa0_m5EwMZHTkEgTzWXqk4');
+                client.login('MTExODk5NzkyMjIwNjQ2NjA5OA.GnRsI-.HjFWB5ggAIzmLq2iCgcpwM8eNw_jg2bTrUnkFg');
             }
         });
     }
