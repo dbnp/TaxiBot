@@ -19,8 +19,8 @@ client.once('ready', () => {
 // Monitor channel for messages and perform actions
 client.on('messageCreate', async (message) => {
     // Check if the message is from the monitored channel and sender doesn't have the specified role
-    const monitoredChannelId = 'your_monitored_channel_here';
-    const restrictedRoleId = 'your_restricted_role_here';
+    const monitoredChannelId = 'your_monitored_channel_here'; // The channel it's 'looking' at
+    const restrictedRoleId = 'your_restricted_role_here'; // 
 
     if (message.channel.id === monitoredChannelId && !message.member.roles.cache.has(restrictedRoleId)) {
         // Extract relevant information from the message
@@ -38,7 +38,7 @@ client.on('messageCreate', async (message) => {
                     // User doesn't exist or messageSent is 0, proceed with sending the message
 
                     // Post the information in the target channel
-                    const targetChannelId = 'target_channel_id_here';
+                    const targetChannelId = 'target_channel_id_here'; // Where the message is being 'sent'
                     const targetChannel = client.channels.cache.get(targetChannelId);
                     const userMention = 'user_to_mention'; // Replace with the actual user ID
                     const mention = `<@${userMention}>`;
