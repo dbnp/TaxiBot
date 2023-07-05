@@ -13,6 +13,7 @@ SQLite will handle our user database, while our bot will exist on and communicat
 3. `sudo apt install nodejs`
 
 4. `node -v`
+
 This line tells us whether it installed properly and displays the version
 
 # Install NPM
