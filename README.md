@@ -4,7 +4,7 @@ This bot requires the latest discord.js (v14), SQLite3, Node.js & NPM. PM2 is a 
 
 SQLite will handle our user database, while our bot will exist on and communicate through our Node server. PM2 is a process manager that allows us to control node processes in a more user-friendly way. More on this later.
 
-# To install Node:
+# To install Node.js:
 
 1. `sudo apt update`
 
