@@ -125,7 +125,7 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 client.on('messageCreate', (message) => {
                     const prefix = '.';
                     const command = 'reset';
-                    const authorizedUserId = 'your_user_id_here'; // User Id allowed to use the command
+                    const authorizedUserId = 'your_user_id_here'; // User ID authorized to execute the command
 
                     if (message.content.startsWith(`${prefix}${command}`) && message.author.id === authorizedUserId) {
                         const args = message.content.split(' ');
