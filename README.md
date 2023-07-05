@@ -63,7 +63,7 @@ You should now be able to run `node main.js` in your terminal from the project d
 
 To setup PM2 for easier process management, follow these steps:
 
-1. `pm2 start "node /path/to/main.js" --name foundry`
+1. `pm2 start "node /path/to/bot.js" --name foundry`
 
 The `--name` parameter will simply name the process, identifying the process by the specified name when listed.
 
