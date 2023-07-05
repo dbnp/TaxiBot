@@ -25,9 +25,9 @@ We need to create a project folder. If you want to specify project details, run:
 
 1. `npm init`
 
-2. If you want to have it fill out default values, simply enter:
+If you want to have it fill out default values, simply enter:
 
-3. `npm init -y`
+2. `npm init -y`
 
 # Install discord.js & SQLite3
 
