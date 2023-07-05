@@ -32,3 +32,24 @@ If you want to have it fill out default values, simply enter:
 # Install discord.js & SQLite3
 
 1. `npm install discord.js`
+
+# Modify variables
+
+You will need to define paths and variable IDs for certain functions or the bot won't work. To quickly find what you need to edit, ctrl + f search '_here' to identify them. 
+
+main.js needs your bot's token as well, or it will be angry and spit errors at you.
+
+# Set up your Discord Bot:
+
+1. First, we need to create a new application on the Discord Developer Portal and get the bot token:
+   - Visit https://discord.com/developers/applications.
+   - Click on `New Application`.
+   - Name your application and click `Create`.
+   - Go to `Bot` tab on the left and click `Add Bot`. Confirm the popup by clicking `Yes, do it!`.
+   - Note down the bot token, you'll need it later.
+
+2. Second, we need to invite the bot to your server:
+   - In the same application page, go to the `OAuth2` tab.
+   - In the `Scopes` section, check `bot`.
+   - In the `Bot Permissions` section, check `Send Messages`, `Read Message History`, `Mention Everyone`, and `Embed Links`.
+   - Copy the generated URL and open it in your web browser to invite the bot to your server.
