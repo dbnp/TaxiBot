@@ -20,8 +20,8 @@ client.once('ready', () => {
 client.on('messageCreate', async (message) => {
     // Check if the message is from the monitored channel and sender doesn't have the specified role
     const monitoredChannelId = 'your_monitored_channel_here'; // The channel it's 'looking' at
-    const restrictedRoleId = 'your_restricted_role_here'; // 
-
+    const restrictedRoleId = 'your_restricted_role_here'; // Role to ignore
+    
     if (message.channel.id === monitoredChannelId && !message.member.roles.cache.has(restrictedRoleId)) {
         // Extract relevant information from the message
         const senderId = message.author.id;
