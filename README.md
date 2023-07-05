@@ -31,4 +31,4 @@ We need to create a project folder. If you want to specify project details, run:
 
 # Install discord.js & SQLite3
 
-1. npm install discord.js
+1. `npm install discord.js`
