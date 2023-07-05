@@ -165,7 +165,7 @@ const db = new sqlite3.Database('./users.db', (err) => {
                 });
 
                 // Start the bot
-                client.login('your_token_here');
+                client.login('your_token_here'); // Place your Discord bot token inside the ''
             }
         });
     }
